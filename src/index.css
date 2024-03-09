@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh; /* Move the height property here */
 }
 
 main {
@@ -52,9 +53,8 @@ main {
   border-radius: 15px;
   margin-top: 30px;
 }
-/* .question-card {
-  display: flex;
-} */
+
+/* Remove .question-card div and .question-card hr rules if not used */
 
 .question-card p {
   font-family: Karla;
@@ -65,7 +65,11 @@ main {
   letter-spacing: 0em;
 }
 
-.question-card label {
+.question-card div {
+  display: inline-block;
+}
+
+.question-card div label {
   display: inline-block;
   font-family: Inter;
   font-size: 10px;
@@ -73,13 +77,16 @@ main {
   line-height: 12px;
   letter-spacing: 0em;
   text-align: center;
-}
-.question-card label {
   border: 1px solid black;
   padding: 5px 10px;
   border-radius: 10px;
   margin: 0 5px;
   margin-bottom: 2px;
+}
+
+.question-card hr {
+  border: 0.5px solid #dbdef0;
+  margin-top: 5px;
 }
 
 input[type="radio"] {
@@ -91,14 +98,8 @@ input[type="radio"]:checked + label {
   outline: none;
 }
 
-.question-card hr {
-  border: 0.5px solid #dbdef0;
-  margin-top: 5px;
-}
-
 @media (min-width: 600px) {
   body {
-    height: 100vh;
     justify-content: center;
     align-items: center;
   }

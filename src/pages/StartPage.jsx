@@ -7,7 +7,7 @@ export default function StartPage(props) {
         <h1>Quizzical</h1>
         <p>Some description if needed</p>
       </div>
-      <button onClick={props.onStartQuiz}>Start quiz</button>
+      <button onClick={props.startQuiz}>Start Quiz</button>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import StartPage from "./pages/StartPage";
 import Quiz from "./pages/Quiz";
 
 function App() {
-  const [quizStarted, setQuizStarted] = useState(false);
+  const [quizStarted, setQuizStarted] = useState(true);
   const [questions, setQuestions] = useState([]);
   const [correctAnswer, setCorrectAnswer] = useState([]);
 
@@ -40,9 +40,9 @@ function App() {
   return (
     <main>
       {quizStarted ? (
-        <Quiz questions={questions} />
-      ) : (
         <StartPage startQuiz={startQuiz} />
+      ) : (
+        <Quiz questions={questions} />
       )}
     </main>
   );
