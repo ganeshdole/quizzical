@@ -11,5 +11,10 @@ export default function Quiz(props) {
 
   const questionElements = displayQuestion(props.questions);
 
-  return <div>{questionElements}</div>;
+  return (
+    <div>
+      {questionElements}
+      <button>Check answers</button>
+    </div>
+  );
 }
