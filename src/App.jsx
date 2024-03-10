@@ -42,7 +42,7 @@ function App() {
       {quizStarted ? (
         <StartPage startQuiz={startQuiz} />
       ) : (
-        <Quiz questions={questions} />
+        <Quiz questions={questions} answer={correctAnswer} />
       )}
     </main>
   );

@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Question from "../components/Question";
 import { nanoid } from "nanoid";
 
 export default function Quiz(props) {
   function displayQuestion(questions) {
     return questions.map((question) => {
-      return <Question key={nanoid()} question={question} />;
+      return (
+        <Question key={nanoid()} question={question} answer={props.answer} />
+      );
     });
   }
 
-  const questionElements = displayQuestion(props.questions);
+  const toggleanswerVisible = () => {};
 
+  const questionElements = displayQuestion(props.questions);
   return (
     <div>
       {questionElements}
-      <button>Check answers</button>
+      <button id="checkAnswer" onClick={toggleanswerVisible}>
+        Check answers
+      </button>
     </div>
   );
 }
