@@ -63,6 +63,8 @@ main {
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0em;
+  color: #293264;
+
 }
 
 .question-card div {
@@ -77,7 +79,7 @@ main {
   line-height: 12px;
   letter-spacing: 0em;
   text-align: center;
-  border: 1px solid black;
+  border: 0.79px solid #4D5B9E ;
   padding: 5px 10px;
   border-radius: 10px;
   margin: 0 5px;
@@ -109,6 +111,15 @@ div button {
   background-color: #4d5b9e;
 }
 
+.correct{
+  background-color: #94D7A2;
+
+}
+
+.wrong{
+  background: #F8BCBC;
+}
+
 @media (min-width: 600px) {
   body {
     justify-content: center;
@@ -121,3 +132,4 @@ div button {
     border: 1px solid rgb(0, 0, 0);
   }
 }
+
